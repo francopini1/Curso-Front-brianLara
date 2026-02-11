@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-50: #f5efe6;
+  --color-primary-100: #ffffff;
+  --color-primary-150: #6f4e37;
+  --color-primary-200: #4a4a4a;
+  --font-family: georgia;
+}
+
+.background {
+  background: var(--color-primary-50);
+}
+.container-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  padding: 12px 14px;
+  background: var(--color-primary-100);
+  border-radius: 10px;
+  border: 1px solid #c98900;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.container-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-coffe {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
+
+.image-coffe:hover {
+  transform: scale(1.08);
+}
+
+.title-card {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 28px;
+  padding: 4px 0;
+  font-weight: 700;
+  color: #6f4e37;
+}
+
+.description-coffe {
+  color: var(--color-primary-200);
+  font-family: var(--font-family);
+  padding: 2px 4px 4px 4px;
+  margin: 4px 0;
+  font-size: 18px;
+}
+
+.link-coffe {
+  color: var(--color-primary-150);
+  text-decoration: none;
+  font-weight: 600;
+}
+.link-coffe:hover {
+  text-decoration: underline;
+}
